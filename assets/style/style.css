@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:wght@300&family=Nunito+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #f5ebe0;
+}
+
+
+
+
+/* login page style */
+
+.login h2 {
+    display: flex;
+    position: relative;
+    left: 300px;
+    top: 30px;
+    color: blue;
+}
+
+.login form {
+    padding: 20px;
+}
+
+.login label[for="username"] {
+    position: relative;
+    left: 218px;
+    top: 30px;
+}
+
+.login input[type="text"] {
+    position: relative;
+    left: 219px;
+    top: 30px;
+    border-radius: 19px;
+}
+
+.login label[for="password"] {
+    position: relative;
+    top: 60px;
+}
+
+.login input[type="password"] {
+    position: relative;
+    top: 57px;
+    left: 5px;
+    border-radius: 90px;
+}
+
+.login input[type="submit"] {
+    position: relative;
+    top: 85px;
+    right: 50px;
+    border-radius: 90px;
+}
+
+
+
+
+/* register page style */
+
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.register-page h2 {
+    position: relative;
+    font-size: 2.5rem;
+    top: -2em;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em 2em;
+    font-size: 1.3rem;
+    background: #f0f0f0;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2), 5px 5px 5px 2px inset rgb(255, 255, 255, 0.7);
+    border-radius: 3px;
+    border: 1px solid #000;
+}
+
+.register__field {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: .3em .6em;
+}
+
+.register-container input[type="email"]:focus,
+.register-container input[type="password"]:focus {
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+.register__create-account {
+    margin: 0 auto;
+}
+
+.register__create-account input {
+    margin-top: 1em;
+    padding: .5em 1em;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3), 2px 2px 5px 2px inset rgb(255, 255, 255, 0.9);
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+}
+
+.register__create-account input:hover {
+    background: #e5e5e5;
+    transform: scale(1.03);
+}
+
+
+
+/* contact page style */
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    background: #d5bdaf;
+    box-shadow: 3px 3px 7px 2px rgba(0, 0, 0, 0.3), -3px -3px 7px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contact-page h2 {
+    font-size: 2.5rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.4rem;
+    font-family: 'Dai Banna SIL', serif;
+}
+
+.contact__social-media__apps {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.fa-brands {
+    font-size: 1.3em;
+    ;
+}
+
+.fa-instagram {
+    color: #bc2a8d;
+}
+
+.fa-facebook {
+    color: #0077b6;
+}
+
+.fa-pinterest {
+    color: #c61a00;
+}
+
+.contact__message {
+    display: flex;
+    flex-direction: column;
+    gap: .3em;
+}
+
+.contact__message textarea {
+    padding: .5em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: .75em;
+    height: 15em;
+}
+
+.contact__message button {
+    /* width: 5em; */
+    font-size: .75em;
+    padding: .7em;
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3), 2px 2px 5px 2px inset rgb(255, 255, 255, 0.9);
+    border: none;
+}
